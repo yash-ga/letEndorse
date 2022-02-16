@@ -13,6 +13,7 @@ export const Form=()=>
     const [area,setArea]=useState("")
     const [locality,setLocality]=useState("")
     const [ownership,SetOwnership]=useState("")
+    const [est,setEst]=useState("")
     const getName=(e)=>{
         setName(e.target.value)
     }
@@ -60,6 +61,9 @@ export const Form=()=>
                   <option value="rented">rented</option>
                   <option value="leased">leased</option>
               </select>
+              <h5>Establishment Area</h5>
+              <input type="text" placeholder="Establishment area" 
+              onChange={(e)=>{setEst(e.target.value)}}/>
             </article>
             <article className="right">
             <p>{name}-is looking for xyz</p>
@@ -73,6 +77,7 @@ export const Form=()=>
             <p>{area}</p>
             <p>{locality}</p>
             <p>{ownership}</p>
+            <p>{est}</p>
             </article>
         </div>
             
