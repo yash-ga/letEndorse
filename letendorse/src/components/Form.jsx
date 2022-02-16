@@ -9,6 +9,7 @@ export const Form=()=>
     const [offer,setOffer]=useState("")
     const [secondary,setSecondary]=useState("")
     const [years,setYears]=useState("")
+    const [training,setTraining]=useState("")
     const getName=(e)=>{
         setName(e.target.value)
     }
@@ -38,7 +39,11 @@ export const Form=()=>
             <input type="text" placeholder="secondary services offered" onChange={(e)=>{setSecondary(e.target.value)}} />
             <h5>years of exp</h5>
             <input type="text" placeholder="year of exp" onChange={(e)=>{setYears(e.target.value)}} name="" id="" />
-             
+             <h5>skill training</h5>
+             <select name="" id="" onChange={(e)=>{setTraining(e.target.value)}}>
+                 <option value="no formal skill training">no formal skill training</option>
+                 <option value="has formal sill training and certificate">has formal sill training and certificate</option>
+             </select>
             </article>
             <article className="right">
             <p>{name}-is looking for xyz</p>
@@ -48,6 +53,7 @@ export const Form=()=>
             <p>{offer}</p>
             <p>{secondary}</p>
             <p>{years}</p>
+            <p>{training}</p>
 
             </article>
         </div>
