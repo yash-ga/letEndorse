@@ -78,7 +78,7 @@ export const Form=()=>
                 </select>
                 <h5>Primary Market</h5>
                 <select onChange={(e)=>{setPrimaryMarket(e.target.value)}} name="" id=""> 
-                    <option value="State">State</option>
+                    <option value="National"></option>
                     <option value="Regional">Regional</option>
                     <option value="Local">Local</option>
                 </select>
@@ -88,24 +88,24 @@ export const Form=()=>
                 <input type="text" placeholder="Suppliers" onChange={(e)=>{setSuppliers(e.target.value)}} name="" id="" />
             </article>
             <article className="right">
-            <p>{name}- is looking to {idea} their business of Cosmetic Products</p>
+            <p><strong>{name}</strong>- is looking to {idea}<strong>{idea}</strong> their business of Cosmetic Products</p>
             
-            <p>This enterprise has been operational since {age} years and has been serving its customers since then</p>
-            <p>This establishment offers products/services like {product} to {offer}</p>
-            <p>In addition, the enterprise shall also be invloved in {secondary}</p>
+            <p>This enterprise has been operational since<strong> {age}   </strong> years and has been serving its customers since then</p>
+            <p>This establishment offers products/services like <strong>{product}  </strong> to <strong> {offer}</strong></p>
+            <p>In addition, the enterprise shall also be invloved in        <strong> {secondary}</strong></p>
             
-            <p>{name} has relevant experience of {years} years in the field</p>
+            <p> <strong>{name}</strong> has relevant experience of <strong>{years}</strong> years in the field</p>
             <p>{training}The entrepreneur {training} in this field of work</p>
-            <p>The  {area} is located in area of {locality} in a {ownership} property</p>
+            <p>The  <strong> {area}</strong> is located in area of <strong>{locality}</strong>  in a  <strong>{ownership}</strong> property</p>
           
- 
-            <p>The size of the establishment is 1200 {est} sq ft</p>
+           
+            <p>The size of the establishment is <strong>{est}</strong>sq ft</p>
 
             
-            <p>{market} Market research has been conducted and the range of products and target market has been identified after that.</p>
-            <p>The enterprise shall focus on offering its products/services to Regional markets {PrimaryMarket} market</p>
-            <p>Our customers shall include -{customers}</p>
-            <p>The enterprise shall procure goods/raw materials from mr king -{suppliers}</p>
+            <p> <strong>{market}</strong> Market research has been conducted and the range of products and target market has been identified after that.</p>
+            <p>The enterprise shall focus on offering its products/services to Regional markets<strong> {PrimaryMarket}</strong> market</p>
+            <p>Our customers shall include -<strong>{customers}</strong></p>
+            <p>The enterprise shall procure goods/raw materials from <strong>{suppliers}</strong></p>
             </article>
         </div>
             

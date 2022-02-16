@@ -1,24 +1,52 @@
 #cont{
   width: 80%;
-  border: 5px solid black;
+  /* border: 5px solid black; */
   justify-content: center;
   display: flex;
   margin-left: 10%;
+  color: #758283;
+  background-color:#242B2E;
+  
 
+
+}
+strong{
+  color: #CAD5E2;
+}
+#cont>div{
+  height: 700px;
+}
+input{
+  width: 70%;
+  padding: 8px;
+
+}
+p{
+  font-size: 18px;
+  text-transform: capitalize;
+}
+select{
+  width: 300px;
+  padding: 8px;
 }
 .left{
   width: 50%;
   text-align: left;
-  padding: 20px;
-  border: 2px solid red;
+  padding: 5px;
+  border: 2px solid gray;
   margin: 5px;
+  overflow: scroll;
+  height: 700px !important;
+
 }
 .right{
-  border: 2px solid red;
+  border: 2px solid gray;
   margin: 5px;
   text-align: left;
   width: 50%;
-  padding: 40px;
+  padding: 5px;
+  /* padding-top: 100px !important; */
+
 }
 .heading{
   text-align: center;
