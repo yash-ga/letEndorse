@@ -14,6 +14,10 @@ export const Form=()=>
     const [locality,setLocality]=useState("")
     const [ownership,SetOwnership]=useState("")
     const [est,setEst]=useState("")
+    const [market,setMarket]=useState("")
+    const [PrimaryMarket,setPrimaryMarket]=useState("")
+    const [customers,setCustomers]=useState("")
+    const [suppliers,setSuppliers]=useState("")
     const getName=(e)=>{
         setName(e.target.value)
     }
@@ -64,13 +68,28 @@ export const Form=()=>
               <h5>Establishment Area</h5>
               <input type="text" placeholder="Establishment area" 
               onChange={(e)=>{setEst(e.target.value)}}/>
+                <h5>Market Research</h5>
+                <select  onChange={(e)=>{setMarket(e.market.value)}} name="" id="">
+                    <option value="Not Conducted">Not Conducted</option>
+                    <option value="Has Been Conducted">Has Been Conducted</option>
+                </select>
+                <h5>Primary Market</h5>
+                <select onChange={(e)=>{setPrimaryMarket(e.target.value)}} name="" id=""> 
+                    <option value="State">State</option>
+                    <option value="Regional">Regional</option>
+                    <option value="Local">Local</option>
+                </select>
+                <h5>Customers</h5>
+                <input type="text" placeholder="Customers" onChange={(e)=>{setCustomers(e.target.value)}} name="" id="" />
+                <h5>Suppliers</h5>
+                <input type="text" placeholder="Suppliers" onChange={(e)=>{setSuppliers(e.target.value)}} name="" id="" />
             </article>
             <article className="right">
-            <p>{name}-is looking for xyz</p>
-            <p>{idea}</p>
-            <p>{age}</p>
-            <p>{product}</p>
-            <p>{offer}</p>
+            <p>{name}- is looking to {idea} their business of Cosmetic Products</p>
+            
+            <p>This enterprise has been operational since {age} years and has been serving its customers since then</p>
+            <p>This establishment offers products/services like {product} to</p>
+            <p>In addition, the enterprise shall also be invloved in {offer}</p>
             <p>{secondary}</p>
             <p>{years}</p>
             <p>{training}</p>
@@ -78,6 +97,10 @@ export const Form=()=>
             <p>{locality}</p>
             <p>{ownership}</p>
             <p>{est}</p>
+            <p>{market}</p>
+            <p>{PrimaryMarket}</p>
+            <p>{customers}</p>
+            <p>{suppliers}</p>
             </article>
         </div>
             
