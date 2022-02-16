@@ -24,35 +24,37 @@ export const Form=()=>
     return(
         <div id="cont">
             <article className="left">
-            <h1>Name</h1>
+                <h1>Business Details</h1>
+            <h5>Name</h5>
             <input type="text" placeholder="type your name" onChange={getName} />
-             <h2>Stage of business</h2>
+             <h5>Stage of Business</h5>
             <select name="" id="#" 
             onChange={(e)=>{setIdea(e.target.value)}}>
-                <option value="startup">startup</option>
-                <option value="scale">scale</option>
+                <option value="Startup">Startup</option>
+                <option value="Scale">Scale</option>
             </select>
-            <h3>age of est</h3>
+            <h5>Age Of Establishment</h5>
             <input type="text" id="age" onChange={(e)=>{setAge(e.target.value)}} />
-            <h4>primary products/services offered</h4>
+            <h5>Primary Products/Services Offered</h5>
             <input type="text"  onChange={(e)=>{setProduct(e.target.value)}}/>
-            <h5>offered to</h5>
+            <h5>Offered to</h5>
             <select name="" id="" onChange={(e)=>{setOffer(e.target.value)}}>
                 <option value="wholesaler">wholesaler</option>
                 <option value="distributors">distributors</option>
-                <option value="rilerseta">retailer</option>
+                <option value="retailer">retailer</option>
                 <option value="consumer">consumer</option>
             </select>
-            <h5>secondary products/services/offered</h5>
+            <h5>Secondary Products/Services Offered</h5>
             <input type="text" placeholder="secondary services offered" onChange={(e)=>{setSecondary(e.target.value)}} />
-            <h5>years of exp</h5>
+            <h5>Years Of Experience</h5>
             <input type="text" placeholder="year of exp" onChange={(e)=>{setYears(e.target.value)}} name="" id="" />
-             <h5>skill training</h5>
+             <h5>Skill Training</h5>
              <select name="" id="" onChange={(e)=>{setTraining(e.target.value)}}>
                  <option value="no formal skill training">no formal skill training</option>
                  <option value="has formal sill training and certificate">has formal sill training and certificate</option>
              </select>
-             <h5>name of area</h5>
+             <h1>Location Details</h1>
+             <h5>Name Of Area</h5>
              <input type="text" placeholder="name of area"
               onChange={(e)=>{setArea(e.target.value)}} name="" id="" />
               <h5>Locality of Business</h5>
@@ -68,6 +70,7 @@ export const Form=()=>
               <h5>Establishment Area</h5>
               <input type="text" placeholder="Establishment area" 
               onChange={(e)=>{setEst(e.target.value)}}/>
+              <h1> Market Details</h1>
                 <h5>Market Research</h5>
                 <select  onChange={(e)=>{setMarket(e.market.value)}} name="" id="">
                     <option value="Not Conducted">Not Conducted</option>
@@ -88,19 +91,21 @@ export const Form=()=>
             <p>{name}- is looking to {idea} their business of Cosmetic Products</p>
             
             <p>This enterprise has been operational since {age} years and has been serving its customers since then</p>
-            <p>This establishment offers products/services like {product} to</p>
-            <p>In addition, the enterprise shall also be invloved in {offer}</p>
-            <p>{secondary}</p>
-            <p>{years}</p>
-            <p>{training}</p>
-            <p>{area}</p>
-            <p>{locality}</p>
-            <p>{ownership}</p>
-            <p>{est}</p>
-            <p>{market}</p>
-            <p>{PrimaryMarket}</p>
-            <p>{customers}</p>
-            <p>{suppliers}</p>
+            <p>This establishment offers products/services like {product} to {offer}</p>
+            <p>In addition, the enterprise shall also be invloved in {secondary}</p>
+            
+            <p>{name} has relevant experience of {years} years in the field</p>
+            <p>{training}The entrepreneur {training} in this field of work</p>
+            <p>The  {area} is located in area of {locality} in a {ownership} property</p>
+          
+ 
+            <p>The size of the establishment is 1200 {est} sq ft</p>
+
+            
+            <p>{market} Market research has been conducted and the range of products and target market has been identified after that.</p>
+            <p>The enterprise shall focus on offering its products/services to Regional markets {PrimaryMarket} market</p>
+            <p>Our customers shall include -{customers}</p>
+            <p>The enterprise shall procure goods/raw materials from mr king -{suppliers}</p>
             </article>
         </div>
             
