@@ -10,6 +10,9 @@ export const Form=()=>
     const [secondary,setSecondary]=useState("")
     const [years,setYears]=useState("")
     const [training,setTraining]=useState("")
+    const [area,setArea]=useState("")
+    const [locality,setLocality]=useState("")
+    const [ownership,SetOwnership]=useState("")
     const getName=(e)=>{
         setName(e.target.value)
     }
@@ -44,6 +47,19 @@ export const Form=()=>
                  <option value="no formal skill training">no formal skill training</option>
                  <option value="has formal sill training and certificate">has formal sill training and certificate</option>
              </select>
+             <h5>name of area</h5>
+             <input type="text" placeholder="name of area"
+              onChange={(e)=>{setArea(e.target.value)}} name="" id="" />
+              <h5>Locality of Business</h5>
+              <select name="" id="" onChange={(e)=>{setLocality(e.target.value)}}>
+                  <option value="urban">urban</option>
+                  <option value="rural">rural</option>
+              </select>
+              <h5>Ownership of Infrastructure</h5>
+              <select name="" id="" onChange={(e)=>{SetOwnership(e.target.value)}}>
+                  <option value="rented">rented</option>
+                  <option value="leased">leased</option>
+              </select>
             </article>
             <article className="right">
             <p>{name}-is looking for xyz</p>
@@ -54,7 +70,9 @@ export const Form=()=>
             <p>{secondary}</p>
             <p>{years}</p>
             <p>{training}</p>
-
+            <p>{area}</p>
+            <p>{locality}</p>
+            <p>{ownership}</p>
             </article>
         </div>
             
